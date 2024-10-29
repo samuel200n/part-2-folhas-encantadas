@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinar</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Mesmo arquivo de estilo usado na página principal -->
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos para centralização e organização do formulário */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #formulario-assinatura {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        label, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 16px;
+            text-align: left;
+        }
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="germania-one-regular">Assine Agora</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#formulario-assinatura">Formulário</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="formulario-assinatura">
+        <div class="container">
+            <h2 class="germania-one-regular">Escolha Seu Plano</h2>
+            <p>Selecione o plano que melhor atende às suas necessidades e aproveite nossos conteúdos exclusivos.</p>
+            <form>
+                <label for="plano">Selecione um plano:</label>
+                <select id="plano" name="plano" required>
+                    <option value="basico">Plano Básico - R$ 29,90/mês</option>
+                    <option value="premium">Plano Premium - R$ 39,90/mês</option>
+                </select>
+                <button type="submit">Confirmar Assinatura</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>©2024 Site de Assinatura de Conteúdo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

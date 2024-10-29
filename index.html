@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assine nosso conteúdo exclusivo e tenha acesso a uma variedade de temas e benefícios especiais.">
+    <title>Portais da Imaginação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+    <style>
+        /* Adicionando CSS para centralização e layout horizontal */
+        #introducao {
+            text-align: center;
+        }
+        .imagem-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Responsividade para imagens em colunas */
+            margin-top: 20px;
+        }
+        .imagem-wrapper {
+            text-align: center;
+            margin: 0 20px; /* Espaçamento uniforme entre as imagens */
+            flex: 1 1 200px; /* Responsividade das divs */
+        }
+        .imagem-wrapper p {
+            font-weight: bold; /* Destaca os títulos dos livros */
+            margin-bottom: 10px; /* Espaçamento uniforme abaixo do título */
+            font-size: 20px; /* Tamanho de fonte fixo */
+            min-height: 40px; /* Garantir que o texto tenha a mesma altura */
+            line-height: 1.2; /* Ajustar o espaçamento entre linhas */
+        }
+        .imagem-wrapper img {
+            max-width: 150px; /* Ajuste a largura da imagem conforme necessário */
+            height: auto; /* Mantém a proporção da imagem */
+            border: 2px solid #000000; /* Borda nas imagens */
+            border-radius: 5px; /* Bordas arredondadas */
+            padding: 5px; /* Espaçamento interno da borda */
+            margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+            transition: transform 0.3s, box-shadow 0.3s; /* Efeito suave de transição */
+        }
+        .imagem-wrapper img:hover {
+            transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="germania-one-regular">Assine Nosso Conteúdo Exclusivo</h1>
+            <nav>
+                <a href="#planos">Planos</a>
+                <a href="#login">Login</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="descricao">
+        <div class="container">
+            <h2 class="germania-one-regular">Bem-vindo ao Nosso Site</h2>
+            <p>Oferecemos conteúdos exclusivos em várias áreas para nossos assinantes. Descubra nossos planos e aproveite o melhor da nossa oferta.</p>
+        </div>
+    </section>
+
+    <section id="introducao">
+        <div class="container">
+            <h2 class="germania-one-regular">Livros</h2>
+        </div>
+    </section>
+    
+    <section id="imagem-livro">
+        <div class="imagem-container">
+            <div class="imagem-wrapper">
+                <p>Cidade da Lua Crescente V.03 Casa de Chama e Sombra</p>
+                <a href="https://www.emporiocultural.com.br/livraria/cidade-da-lua-crescente-v-03-casa-de-chama-e-sombra" target="_blank">
+                    <img class="imagem-simetrica" src="https://images.tcdn.com.br/img/img_prod/824711/cidade_da_lua_crescente_v_03_casa_de_chama_e_sombra_4473_1_db8dee2c10c1bfb56ae940bf21e7219c.jpg" alt="Cidade da Lua Crescente V.03">
+                </a>
+            </div>
+            <div class="imagem-wrapper">
+                <p>Harry Potter V.01 - E a Pedra Filosofal</p>
+                <a href="https://www.emporiocultural.com.br/livraria/harry-potter-v-01-e-a-pedra-filosofal" target="_blank">
+                    <img class="imagem-simetrica" src="https://images.tcdn.com.br/img/img_prod/824711/harry_potter_v_01_e_a_pedra_filosofal_4819_1_3b8a61b515137a7a1ccfdcb400ca5bbb.jpg" alt="Harry Potter V.01">
+                </a>
+            </div>
+            <div class="imagem-wrapper">
+                <p>O Hobbit</p>
+                <a href="https://www.emporiocultural.com.br/livraria/o-hobbit" target="_blank">
+                    <img class="imagem-simetrica" src="https://images.tcdn.com.br/img/img_prod/824711/o_hobbit_5061_1_e58deb5f123c11a541d4e4c08db87e88.jpg" alt="O Hobbit">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="introducao">
+        <div class="container">
+            <h2 class="germania-one-regular">Por Que Assinar?</h2>
+            <p>Com nossa assinatura, você terá acesso a conteúdos exclusivos, promoções e vantagens que não encontrará em nenhum outro lugar. Assinando um de nossos planos, você poderá explorar uma variedade de temas e aproveitar benefícios especiais para nossos assinantes. Seja você um ávido leitor ou alguém que busca conhecimento em diversas áreas, nosso serviço é feito para atender às suas necessidades.</p>
+        </div>
+    </section>
+    
+    <section id="planos">
+        <div class="container">
+            <h2 class="germania-one-regular">Nossos Planos</h2>
+            <div class="plano">
+                <h3>Plano Básico</h3>
+                <p>Acesso a conteúdos básicos.</p>
+                <p>Nesse plano, você pode ter acesso a promoções exclusivas e acesso antecipado aos livros assim que forem lançados. Entre os livros disponíveis estão:</p>
+                <p><strong>R$ 29,90/mês</strong></p>
+                <button onclick="window.location.href='assinar.html';">Assinar</button>
+            </div>
+            <div class="plano">
+                <h3>Plano Premium</h3>
+                <p>Acesso completo a todos os conteúdos e recursos.</p>
+                <p>Inclui acesso aos benefícios de níveis anteriores, incluindo os livros citados, além de pré-venda e descontos especiais em:</p>
+                <p>Além disso, você poderá aproveitar promoções que chegam a até 45% de desconto a cada dois livros comprados.</p>
+                <p><strong>R$ 39,90/mês</strong></p>
+                <button onclick="window.location.href='assinar.html';">Assinar</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="login">
+        <div class="container">
+            <h2 class="germania-one-regular">Login</h2>
+            <form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>©2024 Portais da Imaginação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+.germania-one-regular {
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #006400;
+    color: #FFD700;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section#descricao {
+    background: #fff;
+}
+
+section#planos {
+    background: #e2e2e2;
+}
+
+.plano {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plano h3 {
+    margin: 0;
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+}
+
+.plano button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.plano button:hover {
+    background: #6A0DAD;
+}
+
+section#login form {
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#login label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+section#login input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section#login button {
+    background: #013220;
+    color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+section#login button:hover {
+    background: #555;
+}
+
+footer {
+    background: #006400;
+    color: #FFD700;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#imagem-livro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagem-simetrica {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    display: inline-block;
+    object-fit: cover;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header .container, .plano, section#login form {
+        width: 90%;
+    }
+
+    header nav a {
+        margin: 0 10px;
+    }
+
+    .imagem-simetrica {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .plano, section#login form {
+        width: 95%;
+    }
+
+    .imagem-simetrica {
+        width: 100px;
+        height: 150px;
+    }
+}
